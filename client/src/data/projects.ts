@@ -17,11 +17,11 @@ export const projects: Project[] = [
     tech: ["React", "TypeScript", "Tailwind"],
     github: "https://github.com/stefano-lev/kanji-study-utility",
     featured: true,
-    coverImage: "/images/projects/kanji-1.jpg",
+    coverImage: "/images/projects/kanji-1.png",
     screenshots: [
-      "/images/projects/kanji-1.jpg",
-      "/images/projects/kanji-2.jpg",
-      "/images/projects/kanji-3.jpg",
+      "/images/projects/kanji-1.png",
+      "/images/projects/kanji-2.png",
+      "/images/projects/kanji-3.png",
     ],
   },
   {
@@ -30,8 +30,15 @@ export const projects: Project[] = [
       "A web-based application for tracking and managing watch progress for Japanese radio shows.",
     tech: ["React", "TypeScript", "Tailwind"],
     github: "https://github.com/stefano-lev/seiraji",
-    coverImage: "/images/projects/seiraji-1.jpg",
-    screenshots: ["/images/projects/seiraji-1.jpg", "/images/projects/seiraji-2.jpg"],
+    featured: true,
+    coverImage: "/images/projects/seiraji-1.png",
+    screenshots: [
+      "/images/projects/seiraji-1.png",
+      "/images/projects/seiraji-2.png",
+      "/images/projects/seiraji-3.png",
+      "/images/projects/seiraji-4.png",
+      "/images/projects/seiraji-5.png",
+    ],
   },
   {
     title: "py-image-stitcher",
