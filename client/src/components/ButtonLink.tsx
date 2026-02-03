@@ -43,7 +43,7 @@ export default function ButtonLink(props: Props) {
   }
 
   // External / file link
-  const openInNewTab = props.newTab ?? false;
+  const openInNewTab = props.newTab ?? true;
 
   return (
     <a
