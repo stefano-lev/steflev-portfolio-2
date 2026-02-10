@@ -67,7 +67,7 @@ export default function Projects() {
                     )}
                     {p.demo && (
                       <ButtonLink href={p.demo} variant="primary">
-                        Live Demo
+                        Live Demo (beta)
                       </ButtonLink>
                     )}
 

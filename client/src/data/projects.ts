@@ -16,6 +16,7 @@ export const projects: Project[] = [
       "A web-based kanji study utility for Japanese learners, focused on recall and repeated exposure.",
     tech: ["React", "TypeScript", "Tailwind"],
     github: "https://github.com/stefano-lev/kanji-study-utility",
+    demo: "https://kanji.stef-lev.xyz/",
     featured: true,
     coverImage: "/images/projects/kanji-1.png",
     screenshots: [
@@ -30,6 +31,7 @@ export const projects: Project[] = [
       "A web-based application for tracking and managing watch progress for Japanese radio shows.",
     tech: ["React", "TypeScript", "Tailwind"],
     github: "https://github.com/stefano-lev/seiraji",
+    demo: "https://seiraji.stef-lev.xyz/",
     featured: true,
     coverImage: "/images/projects/seiraji-1.png",
     screenshots: [
