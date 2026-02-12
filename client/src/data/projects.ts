@@ -16,13 +16,14 @@ export const projects: Project[] = [
       "A web-based kanji study utility for Japanese learners, focused on recall and repeated exposure.",
     tech: ["React", "TypeScript", "Tailwind"],
     github: "https://github.com/stefano-lev/kanji-study-utility",
-    demo: "https://kanji.stef-lev.xyz/",
     featured: true,
     coverImage: "/images/projects/kanji-1.png",
     screenshots: [
       "/images/projects/kanji-1.png",
       "/images/projects/kanji-2.png",
       "/images/projects/kanji-3.png",
+      "/images/projects/kanji-4.png",
+      "/images/projects/kanji-5.png",
     ],
   },
   {
