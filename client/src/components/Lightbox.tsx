@@ -26,26 +26,16 @@ export default function Lightbox({
 
   return (
     <div
-      className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm"
+      className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-6"
       onClick={onClose}
     >
-      <div
-        className="mx-auto flex h-full max-w-6xl items-center justify-center px-4"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="relative w-full">
+      <div className="relative flex justify-center" onClick={(e) => e.stopPropagation()}>
+        <div className="relative inline-block">
           <img
             src={images[index]}
             alt={`Screenshot ${index + 1}`}
-            className="w-full rounded-2xl border border-white/10"
+            className="max-h-[85vh] w-auto max-w-full rounded-2xl border border-white/10 object-contain"
           />
-
-          <button
-            onClick={onClose}
-            className="absolute right-3 top-3 rounded-xl border border-white/10 bg-black/50 px-3 py-2 text-sm font-semibold text-white hover:bg-black/70"
-          >
-            Close
-          </button>
 
           {images.length > 1 && (
             <>
