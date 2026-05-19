@@ -11,6 +11,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "SeiRaji",
+    description:
+      "A full-stack web application for tracking and managing watch progress for Japanese radio shows.",
+    tech: ["React", "TypeScript", "Tailwind", "Express/Node"],
+    github: "https://github.com/stefano-lev/seiraji",
+    demo: "https://seiraji.stef-lev.xyz/",
+    featured: true,
+    coverImage: "/images/projects/seiraji-1.png",
+    screenshots: [
+      "/images/projects/seiraji-1.png",
+      "/images/projects/seiraji-2.png",
+      "/images/projects/seiraji-3.png",
+      "/images/projects/seiraji-4.png",
+      "/images/projects/seiraji-5.png",
+    ],
+  },
+  {
     title: "Kanji Shishou",
     description:
       "A web-based kanji study utility for Japanese learners, focused on recall and repeated exposure.",
@@ -27,23 +44,6 @@ export const projects: Project[] = [
       "/images/projects/kanji-5.png",
       "/images/projects/kanji-6.png",
       "/images/projects/kanji-7.png",
-    ],
-  },
-  {
-    title: "SeiRaji",
-    description:
-      "A web-based application for tracking and managing watch progress for Japanese radio shows.",
-    tech: ["React", "TypeScript", "Tailwind"],
-    github: "https://github.com/stefano-lev/seiraji",
-    demo: "https://seiraji.stef-lev.xyz/",
-    featured: true,
-    coverImage: "/images/projects/seiraji-1.png",
-    screenshots: [
-      "/images/projects/seiraji-1.png",
-      "/images/projects/seiraji-2.png",
-      "/images/projects/seiraji-3.png",
-      "/images/projects/seiraji-4.png",
-      "/images/projects/seiraji-5.png",
     ],
   },
   {
