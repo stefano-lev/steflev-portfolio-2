@@ -25,6 +25,7 @@ export const projects: Project[] = [
       "/images/projects/seiraji-3.png",
       "/images/projects/seiraji-4.png",
       "/images/projects/seiraji-5.png",
+      "/images/projects/seiraji-6.png",
     ],
   },
   {
