@@ -13,8 +13,8 @@ export const projects: Project[] = [
   {
     title: "SeiRaji",
     description:
-      "A full-stack web application for tracking and managing watch progress for Japanese radio shows.",
-    tech: ["React", "TypeScript", "Tailwind", "Express/Node"],
+      "SeiRaji is a React + TypeScript tracking app built around Japanese seiyuu radio and podcast content.\nWhat started as a personal utility project gradually evolved into a larger full-stack application featuring metadata importing, persistent local/browser storage, cloud backup syncing, responsive UI systems, and fairly involved client-side state management.",
+    tech: ["React", "TypeScript", "Tailwind", "Express/Node", "SQLite3"],
     github: "https://github.com/stefano-lev/seiraji",
     demo: "https://seiraji.stef-lev.xyz/",
     featured: true,
@@ -26,13 +26,15 @@ export const projects: Project[] = [
       "/images/projects/seiraji-4.png",
       "/images/projects/seiraji-5.png",
       "/images/projects/seiraji-6.png",
+      "/images/projects/seiraji-7.png",
+      "/images/projects/seiraji-8.png",
     ],
   },
   {
     title: "Kanji Shishou",
     description:
       "A web-based kanji study utility for Japanese learners, focused on recall and repeated exposure.",
-    tech: ["React", "TypeScript", "Tailwind"],
+    tech: ["React", "JavaScript", "Tailwind"],
     github: "https://github.com/stefano-lev/kanji-study-utility",
     demo: "https://kanji.stef-lev.xyz/",
     featured: true,
