@@ -13,7 +13,7 @@ export const projects: Project[] = [
   {
     title: "SeiRaji",
     description:
-      "SeiRaji is a React + TypeScript tracking app built around Japanese seiyuu radio and podcast content.\nWhat started as a personal utility project gradually evolved into a larger full-stack application featuring metadata importing, persistent local/browser storage, cloud backup syncing, responsive UI systems, and fairly involved client-side state management.",
+      "SeiRaji is a React + TypeScript media tracking app built around Japanese seiyuu radio and podcast content.",
     tech: ["React", "TypeScript", "Tailwind", "Express/Node", "SQLite3"],
     github: "https://github.com/stefano-lev/seiraji",
     demo: "https://seiraji.stef-lev.xyz/",
