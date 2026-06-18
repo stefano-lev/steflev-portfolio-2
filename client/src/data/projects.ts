@@ -34,8 +34,8 @@ export const projects: Project[] = [
     title: "Kanji Shishou",
     description:
       "A web-based kanji study utility for Japanese learners, focused on recall and repeated exposure.",
-    tech: ["React", "JavaScript", "Tailwind"],
-    github: "https://github.com/stefano-lev/kanji-study-utility",
+    tech: ["React", "TypeScript", "Tailwind", "Express/Node", "SQLite3"],
+    github: "https://github.com/stefano-lev/Kanji-Shishou",
     demo: "https://kanji.stef-lev.xyz/",
     featured: true,
     coverImage: "/images/projects/kanji-1.png",
@@ -47,6 +47,9 @@ export const projects: Project[] = [
       "/images/projects/kanji-5.png",
       "/images/projects/kanji-6.png",
       "/images/projects/kanji-7.png",
+      "/images/projects/kanji-8.png",
+      "/images/projects/kanji-9.png",
+      "/images/projects/kanji-10.png",
     ],
   },
   {
