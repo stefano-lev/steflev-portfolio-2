@@ -42,7 +42,17 @@ export const projects: Project[] = [
     featured: true,
     status: "Live Demo",
     coverImage: "/images/projects/seiraji-1.png",
-    screenshots: ["/images/projects/seiraji-1.png", "/images/projects/seiraji-2.png"],
+    screenshots: [
+      "/images/projects/seiraji-1.png",
+      "/images/projects/seiraji-2.png",
+      "/images/projects/seiraji-3.png",
+      "/images/projects/seiraji-4.png",
+      "/images/projects/seiraji-5.png",
+      "/images/projects/seiraji-6.png",
+      "/images/projects/seiraji-7.png",
+      "/images/projects/seiraji-8.png",
+      "/images/projects/seiraji-9.png",
+    ],
   },
   {
     title: "Kanji Shishou",
