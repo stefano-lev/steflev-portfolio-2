@@ -19,8 +19,9 @@ export default function About() {
 
           <p>
             I value clarity, consistency, and finishing what I start. Most of my work has
-            been self-directed, which has helped me become comfortable learning
-            independently and solving problems from first principles.
+            been self-directed, which has helped me get comfortable learning
+            independently, debugging unfamiliar problems, and improving projects over
+            time.
           </p>
 
           <p>

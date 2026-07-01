@@ -3,9 +3,9 @@ import SectionHeading from "../components/SectionHeading";
 import Badge from "../components/Badge";
 
 const skills = {
-  Languages: ["Python", "TypeScript", "JavaScript", "C++ (coursework)"],
-  Tools: ["Git", "Linux", "Node.js", "Express", "REST APIs"],
-  Interests: ["Cybersecurity", "Automation", "Developer tooling"],
+  Languages: ["Python", "TypeScript", "JavaScript", "C++", "Go (basic)"],
+  "Web / Backend": ["React", "Tailwind", "Node.js", "Express", "SQLite"],
+  Tools: ["Git", "Linux", "Cloudflare Pages", "REST APIs", "VS Code"],
 };
 
 export default function Skills() {

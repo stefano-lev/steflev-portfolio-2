@@ -42,16 +42,39 @@ export default function Projects() {
               <div className="grid gap-5 sm:grid-cols-[1.3fr_1fr]">
                 {/* left */}
                 <div>
-                  <div className="flex items-center gap-3">
-                    <h3 className="text-xl font-bold">{p.title}</h3>
-                    {p.featured && (
-                      <span className="text-xs font-semibold rounded-full border border-white/10 bg-white/10 px-2 py-1">
-                        Featured
-                      </span>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-3">
+                      <h3 className="text-xl font-bold">{p.title}</h3>
+
+                      {p.featured && (
+                        <span className="rounded-full border border-white/10 bg-white/10 px-2 py-1 text-xs font-semibold">
+                          Featured
+                        </span>
+                      )}
+
+                      {p.status && (
+                        <span className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-2 py-1 text-xs font-semibold text-emerald-200">
+                          {p.status}
+                        </span>
+                      )}
+                    </div>
+
+                    <p className="mt-2 text-sm font-medium text-zinc-200">{p.tagline}</p>
+
+                    <div className="mt-3 max-w-2xl space-y-3 text-zinc-300">
+                      {p.description.map((paragraph) => (
+                        <p key={paragraph}>{paragraph}</p>
+                      ))}
+                    </div>
+
+                    {p.highlights && (
+                      <ul className="mt-4 max-w-2xl list-disc space-y-1 pl-5 text-sm text-zinc-400">
+                        {p.highlights.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
                     )}
                   </div>
-
-                  <p className="mt-2 text-zinc-300 max-w-2xl">{p.description}</p>
 
                   <div className="mt-4 flex flex-wrap gap-2">
                     {p.tech.map((t) => (
