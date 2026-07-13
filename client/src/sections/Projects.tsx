@@ -14,6 +14,17 @@ export default function Projects() {
   const [lightboxImages, setLightboxImages] = useState<string[] | null>(null);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
+  const [expandedHighlights, setExpandedHighlights] = useState<Record<string, boolean>>(
+    {},
+  );
+
+  const toggleHighlights = (title: string) => {
+    setExpandedHighlights((current) => ({
+      ...current,
+      [title]: !current[title],
+    }));
+  };
+
   const close = () => setLightboxImages(null);
 
   const open = (images: string[], startIndex = 0) => {
@@ -24,10 +35,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-16 border-t border-white/10">
       <Container>
-        <SectionHeading
-          title="Projects"
-          subtitle="A few things I’ve built. I prioritize clean architecture, documentation, and shippable results."
-        />
+        <SectionHeading title="Projects" />
 
         <div className="grid gap-6">
           {sorted.map((p) => (
@@ -67,12 +75,45 @@ export default function Projects() {
                       ))}
                     </div>
 
-                    {p.highlights && (
-                      <ul className="mt-4 max-w-2xl list-disc space-y-1 pl-5 text-sm text-zinc-400">
-                        {p.highlights.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
+                    {p.highlights && p.highlights.length > 0 && (
+                      <div className="mt-4">
+                        <button
+                          type="button"
+                          onClick={() => toggleHighlights(p.title)}
+                          aria-expanded={!!expandedHighlights[p.title]}
+                          className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs font-semibold text-zinc-300 transition hover:bg-white/10 hover:text-white"
+                        >
+                          <span>
+                            {expandedHighlights[p.title]
+                              ? "Hide details"
+                              : "Show details"}
+                          </span>
+                          <span
+                            className={`transition-transform duration-200 ${
+                              expandedHighlights[p.title] ? "rotate-180" : ""
+                            }`}
+                            aria-hidden="true"
+                          >
+                            ↓
+                          </span>
+                        </button>
+
+                        <div
+                          className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${
+                            expandedHighlights[p.title]
+                              ? "grid-rows-[1fr] opacity-100"
+                              : "grid-rows-[0fr] opacity-0"
+                          }`}
+                        >
+                          <div className="overflow-hidden">
+                            <ul className="mt-3 max-w-2xl list-disc space-y-1 pl-5 text-sm text-zinc-400">
+                              {p.highlights.map((item) => (
+                                <li key={item}>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     )}
                   </div>
 
